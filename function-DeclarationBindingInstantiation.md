@@ -1,0 +1,1 @@
+## function的执行之[Declaration Binding Instantiation](http://es5.github.io/#x10.5)(声明绑定实例化)

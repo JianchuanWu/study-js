@@ -1,11 +1,11 @@
-# function的执行之“作用域链”
+## function的执行之“作用域链”
   ```javascript 
   function foo(){
     console.log(this.a + b) //?
   }
   ```
 
-## [Lexical Environment](http://es5.github.io/#x10.2)&[Environment Record](http://es5.github.io/#x10.2.1)
+### [Lexical Environment](http://es5.github.io/#x10.2)&[Environment Record](http://es5.github.io/#x10.2.1)
 
 "Define the association of Identifiers to specific variables and functions."
 （定义Identifiers与某个变量、函数的关系）
@@ -52,3 +52,5 @@ function outer(outerArg){
 outer('This is outer arg.')('This is middle arg.')('This is inner arg.');
 ```
 由于js引擎就是按这个规定开发的所以表现出“作用域链”式的行为。
+
+[下一节](function-ExecutionContext.md)
