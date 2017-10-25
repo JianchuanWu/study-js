@@ -5,16 +5,7 @@
   }
   ```
 
-### 术语
-FunctionDeclaration :
-
-    function Identifier ( FormalParameterList[opt] ) { FunctionBody }
-
-FunctionExpression :
-
-    function Identifier[opt] ( FormalParameterList[opt] ) { FunctionBody }
-    
-Lexical Environment:
+## [Lexical Environment](http://es5.github.io/#x10.2)&[Environment Record](http://es5.github.io/#x10.2.1)
 
 "Define the association of Identifiers to specific variables and functions."
 （定义Identifiers与某个变量、函数的关系）
