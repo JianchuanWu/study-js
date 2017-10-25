@@ -1,9 +1,4 @@
-## function的执行之“作用域链”
-  ```javascript 
-  function foo(){
-    console.log(this.a + b) //?
-  }
-  ```
+## function的执行之Lexical Environment
 
 ### [Lexical Environment](http://es5.github.io/#x10.2)&[Environment Record](http://es5.github.io/#x10.2.1)
 
@@ -16,11 +11,13 @@
 function outer(){
     function inner1(){}
     function inner2(){}
+    inner1();
+    inner2();
 }
+outer()
 ```
 ![](image/le3.jpg) 
 
-### “作用域链”的根儿
 [ECMA-262-5.1](http://es5.github.io/)<br/>
 [10.2.2.1](http://es5.github.io/#x10.2.2.1) GetIdentifierReference (lex, name, strict)
 The abstract operation GetIdentifierReference is called with a Lexical Environment lex, an identifier String
@@ -42,15 +39,15 @@ whose strict mode flag is strict.
 代码例子：
 ```javascript
 function outer(outerArg){
-	return function middle(midArg){
-		return function inner(innerArg){
-			var innerArg;
+	function middle(midArg){
+		function inner(innerArg){
 			console.log(outerArg,midArg,innerArg);
 		}
+	    inner('innerArg');
 	}
+    middle('midArg');
 }
-outer('This is outer arg.')('This is middle arg.')('This is inner arg.');
+outer('outerArg');
 ```
-由于js引擎就是按这个规定开发的所以表现出“作用域链”式的行为。
 
 [下一节](function-ExecutionContext.md)
