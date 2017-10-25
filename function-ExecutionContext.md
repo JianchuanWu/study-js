@@ -1,5 +1,5 @@
 ## function的执行之执行上下文([Execution Contexts](http://es5.github.io/#x10.3))
-这一章描述了一个Execution Context的栈结构
+这一章描述了一个Execution Context的栈结构<br/>
 ![](image/ec0.jpg)
 每次函数调用会创建一个Execution Context（入栈），每个返回语句或throw会将Execution Context出栈。 
 上图描述了下方代码运行到`console.log...`时的Execution Context的情况。
