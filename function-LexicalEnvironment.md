@@ -39,12 +39,12 @@ whose strict mode flag is strict.
 代码例子：
 ```javascript
 function outer(outerArg){
-	function middle(midArg){
-		function inner(innerArg){
-			console.log(outerArg,midArg,innerArg);
-		}
-	    inner('innerArg');
-	}
+    function middle(midArg){
+        function inner(innerArg){
+            console.log(outerArg,midArg,innerArg);
+        }
+        inner('innerArg');
+    }
     middle('midArg');
 }
 outer('outerArg');
