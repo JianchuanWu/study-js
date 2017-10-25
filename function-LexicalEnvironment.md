@@ -49,5 +49,7 @@ function outer(outerArg){
 }
 outer('outerArg');
 ```
+### 总结
+Lexical Environment的结构：有一块存储区域Environment Records，存储identifier及其引用，并提供增删改查接口；持有外层Lexical Environment的引用；
 
 [下一节](function-ExecutionContext.md)
