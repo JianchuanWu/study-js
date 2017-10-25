@@ -57,3 +57,13 @@ Environment Record是个js里的对象`{}`，那么经过这步之后ER.outerArg
     })(3);
     ```
     因为`var a;`执行前，第一步已经把形参`a`放进Environment Record中了，所以`var a;`什么也没做。其他解释都不对。:joy:
+    
+下一节会再看闭包究竟是怎么回事。<br/>
+并且我还遇到了一个奇葩的现象，看通过以后的学习能否给出正确解释,代码：
+```javascript
+(function(a,b) {
+  function b() {}
+  console.log(arguments[1]);//function b()
+})(1,2);
+```
+要解释这个代码估计要看[CreateArgumentsObject](http://es5.github.io/#x10.6)(太长)
