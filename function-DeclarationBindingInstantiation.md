@@ -67,3 +67,5 @@ Environment Record是个js里的对象`{}`，那么经过这步之后ER.outerArg
 })(1,2);
 ```
 要解释这个代码估计要看[CreateArgumentsObject](http://es5.github.io/#x10.6)(太长)
+
+[下一节](function-Closure.md)

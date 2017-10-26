@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test0</title>
+</head>
+<body>
+<script>
+    function outer(outerArg){
+        function middle(midArg){
+            function inner(innerArg){
+                debugger;
+                console.log(outerArg,midArg,innerArg);
+            }
+            inner('innerArg');
+        }
+        middle('midArg');
+    }
+    outer('outerArg');
+
+    function outer2(outerArg){
+        return function middle(midArg){
+            return function inner(innerArg){
+                debugger;
+                console.log(outerArg,midArg,innerArg);
+            }
+        }
+    }
+    outer2('outerArg')('midArg')('innerArg');
+</script>
+</body>
+</html>
