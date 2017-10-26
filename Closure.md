@@ -115,4 +115,4 @@ add5被调用时就会从add的LexicalEnvironment中获取x的值。
 
 总之一句话就是，LexicalEnvironment在函数被调用前就已经确定在那里了，是**静态**的。
 
-[]
+[下一节](prototype&__proto__.md)
