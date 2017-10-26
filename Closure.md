@@ -5,7 +5,7 @@
     
     "9. Set the [[Scope]] internal property of F to the value of Scope."
     "a Lexical Environment specified by Scope"
-就是说Scope就是Lexical Environment，在[第一节](function-LexicalEnvironment.md)
+就是说Scope就是Lexical Environment，在[第一节](LexicalEnvironment.md)
 已经说明了LexicalEnvironment就是一个*链*的结构,可以递归地查他里边的变量。
 
 ```javascript

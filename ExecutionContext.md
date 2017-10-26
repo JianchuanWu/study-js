@@ -24,4 +24,4 @@ Lexical Environment中的[Environment Records](http://es5.github.io/#x10.2.1)
 就是一个存储区域，但是目前为止还不知道这个区域的变量是如何
 初始化进去的。接着往下看。
 
-[下一节](function-DeclarationBindingInstantiation.md)
+[下一节](DeclarationBindingInstantiation.md)
