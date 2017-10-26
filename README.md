@@ -5,3 +5,4 @@
 1. [Lexical Environment](function-LexicalEnvironment.md)
 2. [执行上下文](function-ExecutionContext.md)
 3. [Declaration Binding Instantiation](function-DeclarationBindingInstantiation.md)
+4. [Closure(闭包)](function-Closure.md)
