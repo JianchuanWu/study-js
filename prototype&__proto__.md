@@ -1,4 +1,4 @@
-`# 面向对象之prototype & \_\_proto__
+# 面向对象之prototype & \_\_proto__
 [prototype的介绍](https://es5.github.io/#x4.2.1)
 
     "Each constructor is a function that has a property named “prototype” that is used to implement prototype-based inheritance and shared properties."
